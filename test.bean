@@ -4,12 +4,12 @@ option "operating_currency" "CNY" ;账本主货币
 
 ;【二、账户设置】
 ;1、开设账户
-2020-07-13 open Assets:Card:1234 CNY, USD ;工商1234的银行卡，支持CNY和USD
-2020-07-13 open Liabilities:CreditCard:9577 CNY, USD ;招商双币信用卡
-2020-07-13 open Income:Salary CNY ;工资收入
-2020-07-13 open Expenses:Tax CNY ;交税
-2020-07-13 open Expenses:Traffic:Taxi CNY ;打车消费，只支持CNY
-2020-07-13 open Equity:OpenBalance ;用于账户初始化，支持任意货币
+2019-07-01 open Assets:Card:1234 CNY, USD ;工商1234的银行卡，支持CNY和USD
+2019-07-01 open Liabilities:CreditCard:5678 CNY, USD ;招商双币信用卡
+2019-07-01 open Income:Salary CNY ;工资收入
+2019-07-01 open Expenses:Tax CNY ;交税
+2019-07-01 open Expenses:Traffic:Taxi CNY ;打车消费，只支持CNY
+2019-07-01 open Equity:OpenBalance ;用于账户初始化，支持任意货币
 
 ;2、账户初始化
 2019-08-27 * "" "银行卡，初始余额10000元"
@@ -28,4 +28,4 @@ option "operating_currency" "CNY" ;账本主货币
 2019-08-31 * "XX公司" "工资收入"
     Assets:Card:1234           12000.00 CNY
     Expenses:Tax                1000.00 CNY
-    Income:Salary
+    Income:Salary             -13000.00 CNY

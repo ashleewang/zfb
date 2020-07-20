@@ -1,0 +1,27 @@
+
+option "title" "My personal ledger"
+
+
+2020-07-01 open Assets:Bank:ICBC:card490:Deposit CNY
+
+2020-07-01 open Liabilities:CreditCard:CMB:card577 CNY
+
+2020-07-01 open Incomes:Salary
+2020-07-01 open Incomes:TransferfromA
+
+2020-07-01 open Expenses:Food
+2020-07-01 open Expenses:Clothing
+2020-07-01 open Expenses:Transpotting
+2020-07-01 open Expenses:Pet
+2020-07-01 open Expenses:Facilities
+2020-07-01 open Expenses:Necessities
+2020-07-01 open Expenses:Taxes
+
+2020-07-01 * "汇款"
+Incomes:TransferfromA                       -1600.00 CNY
+Assets:Bank:ICBC:card490:Deposit             1600.00 CNY
+
+2020-07-17 * "电动车"
+Liabilities:CreditCard:CMB:card577             -2.00 CNY
+Expenses:Transpotting                           2.00 CNY
+
